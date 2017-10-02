@@ -11,8 +11,8 @@ class BitmapEditor
       line = line.chomp
       param = line.split(' ')
       command = param[0]
-      x = param[1].to_i
-      y = param[2].to_i
+      x = param[1]
+      y = param[2]
       case command
       when 'I'
         @image = draw_image(x, y)
@@ -27,6 +27,8 @@ class BitmapEditor
   private
 
   def draw_image(x, y, color = 0)
+    x = x.to_i
+    y = y.to_i
     line = draw_line(x, color) + "\n"
     line * y
   end

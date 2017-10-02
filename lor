@@ -1,0 +1,16 @@
+
+BitmapEditor
+  #run
+[32m    a new image of 3 x 3 with all white pixels when I is command[0m
+[32m    a new image of 2 x 4 with all white pixels when I is command[0m
+[32m    a new image of 1 x 1 with all white pixels when I is command[0m
+[32m    when no image created notifies user[0m
+[32m    when file does not exist or is emptynotifies user[0m
+
+creates and outputs
+[32m  a new image of 3 x 3 with all white pixels when I is command[0m
+[32m  a new image of 2 x 4 with all white pixels when I is command[0m
+
+Finished in 0.01316 seconds (files took 0.12655 seconds to load)
+[32m7 examples, 0 failures[0m
+

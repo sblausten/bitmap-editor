@@ -1,4 +1,15 @@
 require './lib/bitmap_editor'
+require 'rantly/rspec_extensions'
+require 'stringio'
+
+def capture_stdout(&blk)
+  old = $stdout
+  $stdout = fake = StringIO.new
+  blk.call
+  fake.string
+ensure
+  $stdout = old
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
